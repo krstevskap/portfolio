@@ -260,8 +260,13 @@ span, .projects-box h1, .gitLink a:hover {
 }
 
 @media (max-width: 675px){
-    .header-container {
+    .header-container, nav ul {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .elem {
+        margin: 0;
     }
 
     header {
