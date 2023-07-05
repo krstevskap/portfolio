@@ -55,7 +55,7 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+.elem {
     margin-left: 2em;
 }
 
@@ -73,7 +73,7 @@ section {
     margin: 0 auto;
     min-height: 100vh;
     width: 90%;
-    padding: 70px 0 8em;
+    padding: 100px 0 8em;
 }
 
 .home, .about, .skills-container, .projects-container, 
@@ -148,7 +148,7 @@ span, .projects-box h1, .gitLink a:hover {
 }
 
 .technologies h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .projects h2 {
@@ -239,7 +239,6 @@ span, .projects-box h1, .gitLink a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 25px 9%;
     margin-top: -100px;
 }
