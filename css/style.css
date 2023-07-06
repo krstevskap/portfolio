@@ -30,6 +30,8 @@ body {
     color: var(--text-color);
 }
 
+/* header style */
+
 header {
     position: fixed;
     width: 100%;
@@ -37,16 +39,11 @@ header {
     z-index: 9999;
 }
 
-.header-container {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1em;
     font-size: 1.1rem;
-}
-
-#sun-icon {
-    width: 7%;
-    cursor: pointer;
 }
 
 nav ul {
@@ -55,19 +52,34 @@ nav ul {
     padding: 0;
 }
 
+nav a {
+    color: var(--text-color);
+    transition: .3s;
+    font-weight: 400;
+}
+
 .elem {
     margin-left: 2em;
 }
 
-nav a {
-    color: var(--text-color);
-    transition: .3s;
+.icon {
+    position: absolute;
+    right: 1rem;
+    top: .75rem;
+    display: none;
+}
+
+#sun-icon {
+    width: 7%;
+    cursor: pointer;
 }
 
 .active {
     color: var(--main-color);
     font-weight: 700;
 }
+
+/* sections style */
 
 section {
     margin: 0 auto;
@@ -76,8 +88,17 @@ section {
     padding: 100px 0 8em;
 }
 
-.home, .about, .skills-container, .projects-container, 
-.contact-container  {
+span {
+    color: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.home, .about, .skills-container, .projects-container, .contact-container  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,26 +114,6 @@ section {
 
 img {
     width: 40%;
-}
-
-span, .projects-box h1, .gitLink a:hover {
-    color: var(--main-color);
-}
-
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-}
-
-.about-container a:link, .about-container a:visited, footer a:visited {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.about-container a:hover {
-    text-decoration: none;
-    color: var(--main-color);
 }
 
 .about-container p {
@@ -162,6 +163,9 @@ span, .projects-box h1, .gitLink a:hover {
     border: 2px solid var(--text-color);
 }
 
+.projects-box h1{
+    color: var(--main-color);
+}
 .projects-box p {
     font-size: 1.2rem;
     margin-top: 1em;
@@ -170,11 +174,6 @@ span, .projects-box h1, .gitLink a:hover {
 .projects-box i {
     font-size: 1.75rem;
     color: var(--main-color);
-}
-
-.gitLink a {
-    color: var(--text-color);
-    font-weight: 600;
 }
 
 .contact-box {
@@ -259,21 +258,45 @@ span, .projects-box h1, .gitLink a:hover {
     font-size: 30px;
 }
 
-@media (max-width: 675px){
-    .header-container, nav ul {
+/* links */
+
+.about-container a:link, .about-container a:visited, footer a:visited, .gitLink a {
+    color: var(--text-color);
+}
+
+.about-container a:hover, .gitLink a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 600px){
+    .icon {
+        display: flex;
+    }
+
+    nav {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .elem {
-        margin: 0;
+    nav ul {
+        flex-direction: column;
+        width: 100%;
     }
 
-    header {
+    nav li {
         text-align: center;
     }
 
-    .header-img {
-        margin-bottom: 1em;
+    .links {
+        width: 100%;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .first {
+        margin-left: 2em;
     }
 }

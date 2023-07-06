@@ -43,3 +43,10 @@ icon.onclick = function(){
   document.body.classList.contains("light-theme") ? icon.src="photos/moon.png" : icon.src="photos/sun.png";
 }
 
+const button = document.getElementsByClassName("icon")[0];
+const navbarLink = document.getElementsByClassName("links")[0];
+
+button.addEventListener("click", () => {
+  navbarLink.classList.toggle('active');
+  event.preventDefault();
+})
