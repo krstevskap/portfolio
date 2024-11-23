@@ -10,9 +10,11 @@ const Card = ({ img, description, link, technologies }) => {
             <div className="card-content">
                 <p className="card-description">{description}</p>
                 <p className="card-technologies">{technologies}</p>
-                <button className="card-button">
-                    <a href={link} target="_blank" rel="noopener noreferrer">View Code</a>
-                </button>
+                <div className='button-container'>
+                    <button className="card-button">
+                        <a href={link} target="_blank" rel="noopener noreferrer">View Code</a>
+                    </button>
+                </div>
             </div>
         </article>
     );

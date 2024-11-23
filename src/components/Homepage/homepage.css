@@ -4,13 +4,16 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    flex-wrap: wrap;
+    padding: 1em;
 }
 
 .content {
-    width: 700px;
+    max-width: 700px;
     height: 250px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .first-row,
@@ -55,4 +58,10 @@ a {
 
 .icons svg:hover {
     background-color: #1e928c;
+}
+
+@media (max-width: 640px) {
+    .content {
+        flex-direction: row;
+    }
 }

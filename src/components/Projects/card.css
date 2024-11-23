@@ -1,5 +1,5 @@
 .card-container {
-    width: 350px;
+    width: 300px;
     margin: 1rem;
     height: 400px;
     border: 1px solid #ccc;
@@ -8,14 +8,13 @@
 
 .card-container:hover {
     background-color: #051441;
-
 }
+
 .card-img img {
     width: 100%;
     height: auto;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-
 }
 
 .card-content {
@@ -36,12 +35,17 @@
 }
 
 .card-button {
-    background-color: #25c1b9;
-    color: #e2e8f0;
-    border: none;
+    background-color: #030c27;
+    color: #25c1b9;
+    border: 1px solid #25c1b9;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
 }
 
 .card-button a {
@@ -50,5 +54,5 @@
 }
 
 .card-button:hover {
-    background-color: #1e928c;
+    background-color: #25c1b9;
 }

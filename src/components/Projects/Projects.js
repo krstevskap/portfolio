@@ -8,7 +8,6 @@ const Projects = () => {
     return (
         <section className="projects-container">
             <h1>Featured Projects</h1>
-            <p>Some of the projects I've worked on</p>
             <div className="projects-list">
                 <Card
                     img={TeamProject}
