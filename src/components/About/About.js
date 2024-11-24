@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
     return (
-        <div className='about-container'>
+        <div className='about-container' data-aos="fade-left">
             <h1>About me</h1>
             <p>
                 Hi! My name is Petrana Krstevska. I'm 23 and currently studying at 

@@ -6,7 +6,7 @@ import './projects.css';
 
 const Projects = () => {
     return (
-        <section className="projects-container">
+        <section className="projects-container" data-aos="fade-right">
             <h1>Featured Projects</h1>
             <div className="projects-list">
                 <Card

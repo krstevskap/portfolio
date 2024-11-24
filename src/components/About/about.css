@@ -9,9 +9,7 @@
     text-align: justify;
     flex-wrap: wrap;
     padding: 1em;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    min-height: 100vh;
 }
 
 .about-container p,
@@ -32,16 +30,4 @@
 .link {
     text-decoration: none;
     color: #25c1b9;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
 }
